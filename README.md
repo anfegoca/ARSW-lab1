@@ -34,19 +34,20 @@ En la consola nos vamos al directorio donde vamos a clonar el repositorio y pone
 git clone https://github.com/anfegoca/ARSW-lab1.git
 
 ```
-![clone](/ruta/a/la/imagen.jpg)
+![clone](https://github.com/anfegoca/ARSW-lab1/blob/master/resources/1.png)
 
 En el direcctorio nos quedará la carpeta del proyecto y dentro veremos las siguiente carpetas
 
-![direc](/ruta/a/la/imagen.jpg)
+![direc](https://github.com/anfegoca/ARSW-lab1/blob/master/resources/2.png)
 
 Para modificar abrimos el proyecto con cualquier editor, en este caso usamos NetBeans
 
-![edit](/ruta/a/la/imagen.jpg)
+![edit](https://github.com/anfegoca/ARSW-lab1/blob/master/resources/3.png)
+![edi2t](https://github.com/anfegoca/ARSW-lab1/blob/master/resources/4.png)
 
 Y ya podemos modificar cualquier clase del proyecto
 
-![class](/ruta/a/la/imagen.jpg)
+![class](https://github.com/anfegoca/ARSW-lab1/blob/master/resources/5.png)
 
 ## Running the tests
 
@@ -56,10 +57,10 @@ Para ejecutar los test del proyecto usamos el siguiente codigo desde la ruta del
 mvn test
 
 ```
-![test](/ruta/a/la/imagen.jpg)
+![test](https://github.com/anfegoca/ARSW-lab1/blob/master/resources/6.png)
 
 Para información más detallada de los test se puede consultar el siguiente 
-[reporte](link)
+[reporte](https://github.com/anfegoca/ARSW-lab1/blob/master/resources/Reporte%20de%20pruebas.pdf)
 
 
 ## Built With
@@ -80,4 +81,10 @@ El versionamiento se realizó a través de [github](https://github.com/anfegoca/
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
+## Design
 
+Para mas información del diseño del proyecto puede ver el siguiente [documento](https://github.com/anfegoca/ARSW-lab1/blob/master/resources/LOC%20Counting.pdf)
+
+## JavaDoc
+
+La documentación del proyecto la puede econtrar [aquí](https://github.com/anfegoca/ARSW-lab1/tree/master/site/apidocs)
