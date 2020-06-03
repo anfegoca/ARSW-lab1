@@ -1,92 +1,83 @@
 # LOC Counting
 
-LOC Counting es un programa que ofrece el servicio de contar las lineas que hay en un archivo, esto incluye los comentarios, o contar las lineas de codigo que hay en un archivo.
+LOC Counting es un programa que ofrece el servicio de contar las lineas que hay en un archivo, esto incluye los comentarios, o contar las líneas de código que hay en un archivo.
 
 ## Getting Started
 
-Para hacer uso del proyecto solo debe clonar el repositorio o descargarlo directamente, para ejectarlo lo hacemos por medio de la consola usando los siguiente comandos:
+Para hacer uso del proyecto solo debe clonar el repositorio o descargarlo directamente, para ejectarlo lo hacemos por medio de la consola usando el siguiente comandos, la opción la cambiamos por la que queremos y la ruta es la del archivo al cual le queremos contar las líneas:
 
-Si se quiere 
 ```bash
 java -cp target/miprimera-app-1.0-SNAPSHOT.jar edu.escuelaing.arsw.intro.App <opcion> <ruta>
 ```
+Entre las opciones que se pueden elegír son:
+* **phy** con el cual podemos contar las líneas físicas
+* **loc** con el cual podemos contar las líneas de código
+
 ### Prerequisites
 
-What things you need to install the software and how to install them
+Para usar el proyecto se necesitan tener las siguientes versiones de java o superior:
+
 
 ```
-Give examples
+java version "1.8"
+javac version "1.8"
+Apache Maven 3.6.3
 ```
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
+Para usar el proyecto decargamos directamente el proyecto o lo clonamos de la siguiente manera:
 
-Say what the step will be
+En la consola nos vamos al directorio donde vamos a clonar el repositorio y ponemos el siguiente comando:
 
-```
-Give the example
-```
-
-And repeat
+```bash
+git clone https://github.com/anfegoca/ARSW-lab1.git
 
 ```
-until finished
-```
+![clone](/ruta/a/la/imagen.jpg)
 
-End with an example of getting some data out of the system or using it for a little demo
+En el direcctorio nos quedará la carpeta del proyecto y dentro veremos las siguiente carpetas
+
+![direc](/ruta/a/la/imagen.jpg)
+
+Para modificar abrimos el proyecto con cualquier editor, en este caso usamos NetBeans
+
+![edit](/ruta/a/la/imagen.jpg)
+
+Y ya podemos modificar cualquier clase del proyecto
+
+![class](/ruta/a/la/imagen.jpg)
 
 ## Running the tests
 
-Explain how to run the automated tests for this system
+Para ejecutar los test del proyecto usamos el siguiente codigo desde la ruta del proyecto
 
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
+```bash
+mvn test
 
 ```
-Give an example
-```
+![test](/ruta/a/la/imagen.jpg)
 
-## Deployment
+Para información más detallada de los test se puede consultar el siguiente 
+[reporte](link)
 
-Add additional notes about how to deploy this on a live system
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
 * [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
 
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+El versionamiento se realizó a través de [github](https://github.com/anfegoca/ARSW-lab1.git)
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Andrés González** - [anfegoca](https://github.com/anfegoca)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
 
