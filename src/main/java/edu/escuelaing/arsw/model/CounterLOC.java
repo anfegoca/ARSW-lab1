@@ -6,6 +6,9 @@
 package edu.escuelaing.arsw.model;
 
 import java.io.BufferedReader;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -19,7 +22,28 @@ public class CounterLOC implements Counter{
      * @return numero de lineas del archivo
      */
     public int count(BufferedReader br) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        int res=0;
+        
+        try {
+            String line;
+            boolean flag=false;
+            while((line=br.readLine())!=null){
+                line=line.trim();
+                if(line.contains("/*")){
+                    flag=true;
+                }
+                else if(!flag && !"".equals(line)){
+                    res++;
+                }
+                else if(flag && line.contains("*/")){
+                    flag=false;
+                }
+                
+            }
+        } catch (IOException ex) {
+            Logger.getLogger(CounterPHY.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return res;
     }
     
 }
