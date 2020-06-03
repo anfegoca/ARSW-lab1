@@ -22,13 +22,13 @@ public class CountlinesTest
     public void PHYFile1(){
         Reader reader = new Reader();
         Counter counter = new CounterPHY();
-        assertEquals(counter.count(reader.read(file1)),32);
+        assertEquals(counter.count(reader.read(file1)),37);
     }
     @Test
     public void PHYFile2(){
         Reader reader = new Reader();
         Counter counter = new CounterPHY();
-        assertEquals(counter.count(reader.read(file2)),39);
+        assertEquals(counter.count(reader.read(file2)),34);
     }
     @Test
     public void LOCFile1(){

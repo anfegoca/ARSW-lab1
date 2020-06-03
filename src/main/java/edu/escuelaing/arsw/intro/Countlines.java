@@ -6,11 +6,16 @@ import edu.escuelaing.arsw.model.CounterPHY;
 import edu.escuelaing.arsw.model.Reader;
 
 /**
- *
+ * Esta clase permite contar las lineas de un archivo, para contar las lineas fisicas se usa "py"
+ * para contar las líneas de código se usa "loc"
  * @author Andres Gonzalez
  */
 public class Countlines 
 {
+    /**
+     * Primero va la opcion, si se quieren contar las lineas fisicas o las de codigo 
+     * @param args array con la opción y la ruta del archivo
+     */
     public static void main(String[] args) {
            if (args.length == 0 || args.length ==1) {
                System.out.println("incorrect arguments.");

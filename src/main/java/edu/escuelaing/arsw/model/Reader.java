@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package edu.escuelaing.arsw.model;
 
 import java.io.BufferedReader;
@@ -13,13 +8,13 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
- *
+ * Esta clase lee un archivo dado su url
  * @author Andres Gonzalez
  */
 public class Reader {
     
     /**
-     * 
+     * Lee el archivo y retorna el BufferedReader correspondiente
      * @param url dirección del archivo
      * @return  BufferedReader del archivo
      */
