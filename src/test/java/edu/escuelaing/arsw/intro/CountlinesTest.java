@@ -19,6 +19,30 @@ public class CountlinesTest
     private final String file2 = "src/main/java/edu/escuelaing/arsw/model/Reader.java";
 
     @Test
+    public void PHYFile1(){
+        Reader reader = new Reader();
+        Counter counter = new CounterPHY();
+        assertEquals(counter.count(reader.read(file1)),32);
+    }
+    @Test
+    public void PHYFile2(){
+        Reader reader = new Reader();
+        Counter counter = new CounterPHY();
+        assertEquals(counter.count(reader.read(file2)),39);
+    }
+    @Test
+    public void LOCFile1(){
+        Reader reader = new Reader();
+        Counter counter = new CounterLOC();
+        assertEquals(counter.count(reader.read(file1)),25);
+    }
+    @Test
+    public void LOCFile2(){
+        Reader reader = new Reader();
+        Counter counter = new CounterLOC();
+        assertEquals(counter.count(reader.read(file2)),20);
+    }
+    @Test
     public void AppphyFile1(){
         try{
             String[] a = {"phy",file1};
@@ -58,29 +82,6 @@ public class CountlinesTest
             assertTrue(false);
         }
     }
-    @Test
-    public void PHYFile1(){
-        Reader reader = new Reader();
-        Counter counter = new CounterPHY();
-        assertEquals(counter.count(reader.read(file1)),32);
-    }
-    @Test
-    public void PHYFile2(){
-        Reader reader = new Reader();
-        Counter counter = new CounterPHY();
-        assertEquals(counter.count(reader.read(file2)),39);
-    }
-    @Test
-    public void LOCFile1(){
-        Reader reader = new Reader();
-        Counter counter = new CounterLOC();
-        assertEquals(counter.count(reader.read(file1)),25);
-    }
-    @Test
-    public void LOCFile2(){
-        Reader reader = new Reader();
-        Counter counter = new CounterLOC();
-        assertEquals(counter.count(reader.read(file2)),20);
-    }
+    
     
 }
