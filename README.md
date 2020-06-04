@@ -1,6 +1,9 @@
 # LOC Counting
 
 LOC Counting es un programa que ofrece el servicio de contar las lineas que hay en un archivo, esto incluye los comentarios, o contar las líneas de código que hay en un archivo.
+* Total de horas trabajadas = 5 horas
+* LOC = 168
+* **LOC/h** = 33,6 
 
 ## Getting Started
 
